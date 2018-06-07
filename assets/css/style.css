@@ -3,7 +3,7 @@ body {
 
 }
 
-.grid {
+.container {
     width: 600px;
     height: 500px;
     margin: 0 auto;
@@ -14,23 +14,42 @@ body {
     box-shadow: 10px 15px 5px rgb(68, 0, 65);
 }
 
-.grid h1 {
+.container h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(252, 36, 180);
     font-size: 60px;
     text-align: center;
     color: white;
     padding: 2px 0px;
+    border-radius: 50px;
 }
 
-.grid #question {
+.container #question {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     color: purple;
 }
 
+h2  {
+    color:rgb(252, 36, 180);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
 .buttons {
     margin-top: 30px;
+}
+
+#start-btn {
+    background-color: rgb(252, 36, 180);
+    width: 250px;
+    font-size: 60px;
+    color: white;
+    border: 3px solid pink;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    border-radius: 50px;
 }
 
 #btn0, #btn1, #btn2, #btn3 {
@@ -41,6 +60,7 @@ body {
     border: 3px solid pink;
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
+    border-radius: 50px;
 }
 
 #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {

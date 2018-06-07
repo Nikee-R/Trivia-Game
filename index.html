@@ -13,20 +13,37 @@
 
     <body>
         <!-- This is everything displayed on the webpage. -->
-        <div class="grid">
-            <div id="quiz">
+        <div class="container">
+            <div id="trivia">
                 <!-- Header -->
                 <h1>Trivia Game!</h1>
-
+                <!-- Timer. -->
+                <h2 id="time-left">Time Left: <span id=timer></span></h2>
                 <p id="question"></p>
-
-                <div class="buttons">
+                <!-- Option buttons. -->
+                <div class="button">
+                    <button id="start-btn"><span id='start'></span>Start!</button>
                     <button id="btn0"><span id="option0"></span></button>
-                    <button id="btn1"><span id="option0"></span></button>
-                    <button id="btn2"><span id="option0"></span></button>
-                    <button id="btn3"><span id="option0"></span></button>
+                    <button id="btn1"><span id="option1"></span></button>
+                    <button id="btn2"><span id="option2"></span></button>
+                    <button id="btn3"><span id="option3"></span></button>
                 </div>
-
+            <!-- Message for right answer.-->
+            <div id="correct">
+                <h1>Correct!</h1>
+                <p>You got the question right! Good job!</p>
+            </div>
+            <!-- Message for wrong answer. -->
+            <div id="wrong">
+                <h1>Wrong!</h1>
+                <p>You got the question incorrect. :(</p>
+                <p>The correct answer was: <span id="answer"></span></p>
+            </div>
+            <!-- Message for timer expiration. -->
+            <div id="timesUp">
+                <h1>Time's up!</h1>
+                <p>You ran out of time!</p>
+            </div>
 
             </div>
         </div>
@@ -36,6 +53,6 @@
         </footer>
 
         <!-- Script Link -->
-        <script src="assets/javascript/game.js"></script>
+        <script src="assets/javascript/app.js"></script>
     </body>
 </html>
